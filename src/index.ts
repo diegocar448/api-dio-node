@@ -3,6 +3,8 @@ import {router} from './routes';
 
 const server = express();
 
+//assim ele poderá entender quando passar um json no body da requisição
+server.use(express.json())
 //ligamos a instancia com o router.ts
 server.use(router);
 
