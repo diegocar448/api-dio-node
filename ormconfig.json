@@ -1,0 +1,9 @@
+{
+    "type": "sqlite",
+    "database": "./src/database/database.sqlite",
+    "_comentario": "todo arquivo na pasta migrations será interpretar",
+    "migrations": ["./src/database/migrations/*.ts"],
+    "cli": {
+        "migrationsDir":"./src/database/migrations"
+    }
+}
