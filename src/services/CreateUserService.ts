@@ -17,7 +17,8 @@ class CreateUserService{
             .insert()
             .into(Usuario)
             .values([
-                {id: "cbb27220-70cf-4c26-81d6-5f75fa51f38e", nome: "Pensamento Ubuntu", email: "pensar@ubuntu.com" },                
+                {id: id, nome: nome, email: email },              
+
             ])
             .execute();
             console.log(usuario)
