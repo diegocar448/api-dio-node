@@ -14,7 +14,7 @@ class CreateUserController {
             return response.status(400).json({mensagem: 'Preencha todos os campos'})
         }
         const user = createUserService.execute({id, nome, email})
-        return response.status(201).json({user})
+        return response.status(201).json(user)
     }
 }
 
