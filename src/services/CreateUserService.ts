@@ -17,7 +17,8 @@ class CreateUserService{
             .insert()
             .into(Usuario)
             .values([
-                {id: id, nome: nome, email: email },                
+                {id: id, nome: nome, email: email },              
+
             ])
             .execute();
             console.log(usuario)
